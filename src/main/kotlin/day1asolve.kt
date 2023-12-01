@@ -1,28 +1,17 @@
 import java.io.File
 
 fun main(args: Array<String>) {
-    val fileName = "testdata"
+    val fileName = "testdata1a"
     var tempList: MutableList<Int> = ArrayList()
-    var holdWord: String = ""
 
     var acc = 0
     File(fileName).forEachLine {
         it.map{ c ->
-            if (c.isLetter()) {
-                holdWord += c
-                println(holdWord)
-            } else {
-                if (holdWord.isNotBlank()) {
-                    when(holdWord){
-                        "two" -> tempList.add(2)
-                        "nine" -> tempList.add(9)
-                    }
-                    holdWord = ""
-                }
+            if (c.isDigit()) {
+                println(c)
                 tempList.add(c.digitToInt())
             }
         }
-        println(tempList)
         var startNum = tempList.first()
         val endNum = tempList.last()
         startNum *= 10
