@@ -1,10 +1,10 @@
-package day1
+package day01
 
 import java.io.File
 
 fun day1parta() {
 //    val fileName = "/Users/hope.ross/Desktop/mine/aoc2023/src/main/kotlin/day1testdata"
-    val fileName = "/Users/kit/Desktop/aoc2023/src/main/kotlin/day1/day1testdata"
+    val fileName = "/Users/kit/Desktop/aoc2023/src/main/kotlin/day01/day1testdata"
     val tempList: MutableList<Int> = ArrayList()
 
     var acc = 0

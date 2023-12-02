@@ -1,10 +1,10 @@
-package day1
+package day01
 
 import java.io.File
 
 fun day1partb() {
 //    val fileName = "/Users/hope.ross/Desktop/mine/aoc2023/src/main/kotlin/day1testdata"
-    val fileName = "/Users/kit/Desktop/aoc2023/src/main/kotlin/day1/day1testdata"
+    val fileName = "/Users/kit/Desktop/aoc2023/src/main/kotlin/day01/day1testdata"
     val map = mapOf(
         "one" to 1, "two" to 2, "three" to 3, "four" to 4,
         "five" to 5, "six" to 6, "seven" to 7, "eight" to 8, "nine" to 9,
